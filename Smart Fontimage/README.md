@@ -33,9 +33,3 @@ python run_my_tool.py
 Output:
 
 - `dist/Smart Fontimage.exe`
-
-## Suggested next steps for publishing
-
-1. Initialize git in this folder.
-2. Add a license file (for example MIT).
-3. Push to GitHub/GitLab.
