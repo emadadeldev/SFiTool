@@ -1,69 +1,35 @@
-# 🎨 Font Atlas Editor Tool Smart Fontimage
+# Smart Fontimage
 
-## أداة تعديل صور الخطوط (Font Atlas)
+Source repository for the **Smart Fontimage** Font Atlas editor.
 
-------------------------------------------------------------------------
+This folder is prepared for public Git hosting so others can run, build, and improve the tool.
 
-## 🇸🇦 العربية
+## Included
 
-### 📌 الوصف
+- `editor.py` main application
+- `utils.py` helpers
+- `run_my_tool.py` Python launcher
+- `run.bat` one-click local run script (Windows)
+- `build.bat` one-click EXE build script (Windows)
+- `font_editor.spec` PyInstaller build config
+- `requirements.txt` dependencies
+- `smart_fontimage.ico` app icon
 
-أداة احترافية لتعديل صور الخطوط (Font Atlas)، ربط كل خلية برمز Unicode،
-التحكم في عرض التباعد (Advance)، ومعاينة النص قبل التصدير. مناسبة لمطوري
-الألعاب والتعريب وأنظمة الخطوط المعتمدة على الصور.
+## Run (development)
 
-### ✨ المميزات
+```powershell
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python run_my_tool.py
+```
 
--   فتح وتعديل صور PNG Font Atlas
--   ضبط الشبكة يدويًا أو تلقائيًا
--   ربط الخلايا برموز Unicode
--   استبدال حرف واحد أو استبدال جماعي
--   التحكم في Default و Selected Glyph Advance
--   دعم RTL للنصوص العربية
--   تصدير Atlas + JSON Metadata
+## Build EXE (Windows)
 
-### 🧩 الاستخدام
+```powershell
+.\build.bat
+```
 
-1.  افتح صورة Atlas.
-2.  اضبط Cell Width / Height و Padding.
-3.  اضغط Apply Grid.
-4.  اختر خلية وحدد Unicode بصيغة Hex.
-5.  عدّل Advance إذا لزم.
-6.  استخدم Preview قبل التصدير.
-7.  اضغط Export Atlas + Metadata.
+Output:
 
-------------------------------------------------------------------------
-
-## 🇬🇧 English
-
-### 📌 Description
-
-A professional tool for editing Font Atlas images, assigning Unicode
-values to each cell, controlling glyph advance spacing, and previewing
-text before export. Ideal for game developers and localization projects.
-
-### ✨ Features
-
--   Open and edit PNG Font Atlas files
--   Manual or automatic grid detection
--   Assign Unicode per cell
--   Single or batch glyph replacement
--   Default and Selected Glyph Advance control
--   RTL support for Arabic
--   Export Atlas + JSON metadata
-
-### 🧩 Usage
-
-1.  Open Atlas image.
-2.  Configure Cell Width / Height and Padding.
-3.  Click Apply Grid.
-4.  Assign Unicode (hex) to cells.
-5.  Adjust advance if needed.
-6.  Preview text.
-7.  Export Atlas + Metadata.
-
-------------------------------------------------------------------------
-
-## 📄 License
-
-Created By iMHR
+- `dist/Smart Fontimage.exe`

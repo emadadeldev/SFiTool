@@ -1,4 +1,0 @@
-PyQt6>=6.6
-Pillow>=9.0
-PyYAML>=6.0
-PyInstaller>=6.0
